@@ -1,0 +1,33 @@
+{
+  "task": 2,
+  "title": "Recovery Mechanism",
+  "status": "passed",
+  "cases": {
+    "primary_success": {
+      "value": 29.0,
+      "source": "primary",
+      "recovered_from": null
+    },
+    "transient_to_backup": {
+      "value": 21.5,
+      "source": "backup",
+      "recovered_from": "timeout"
+    },
+    "not_found_to_cache": {
+      "value": 15.0,
+      "source": "cache",
+      "recovered_from": "not_found"
+    },
+    "not_found_without_cache": {
+      "value": null,
+      "source": "none",
+      "recovered_from": "not_found"
+    }
+  },
+  "expected_sources": {
+    "primary_success": "primary",
+    "transient_to_backup": "backup",
+    "not_found_to_cache": "cache",
+    "not_found_without_cache": "none"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "task": 1,
+  "title": "Error Classes",
+  "status": "passed",
+  "classes": {
+    "TransientError": {
+      "type": "Exception",
+      "purpose": "Temporary failure that can use a fallback."
+    },
+    "NotFoundError": {
+      "type": "Exception",
+      "purpose": "Primary lookup could not find the requested value."
+    },
+    "FatalError": {
+      "type": "Exception",
+      "purpose": "Unrecoverable failure that must propagate."
+    }
+  },
+  "verification": {
+    "transient_is_exception": true,
+    "not_found_is_exception": true,
+    "fatal_is_exception": true,
+    "classes_are_distinct": true
+  }
+}

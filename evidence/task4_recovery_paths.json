@@ -1,0 +1,38 @@
+{
+  "task": 4,
+  "title": "Recovery Path Testing",
+  "status": "passed",
+  "paths": {
+    "primary": {
+      "value": 29.0,
+      "source": "primary",
+      "recovered_from": null
+    },
+    "backup": {
+      "value": 21.5,
+      "source": "backup",
+      "recovered_from": "timeout"
+    },
+    "cache": {
+      "value": 15.0,
+      "source": "cache",
+      "recovered_from": "not_found"
+    },
+    "none": {
+      "value": null,
+      "source": "none",
+      "recovered_from": "not_found"
+    }
+  },
+  "fatal_path": {
+    "propagated": true,
+    "expected": "FatalError"
+  },
+  "paths_verified": [
+    "primary success",
+    "backup recovery",
+    "cache recovery",
+    "no-value recovery",
+    "fatal propagation"
+  ]
+}

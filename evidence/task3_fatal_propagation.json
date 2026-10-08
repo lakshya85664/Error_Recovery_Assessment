@@ -1,0 +1,15 @@
+{
+  "task": 3,
+  "title": "Fatal Error Propagation",
+  "status": "passed",
+  "primary_lookup_error": {
+    "type": "FatalError",
+    "message": "auth key revoked"
+  },
+  "recover_error": {
+    "type": "FatalError",
+    "message": "auth key revoked"
+  },
+  "fatal_propagates": true,
+  "recovery_result_not_returned": true
+}

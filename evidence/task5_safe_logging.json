@@ -1,0 +1,17 @@
+{
+  "task": 5,
+  "title": "Safe Logging",
+  "status": "passed",
+  "logging_example": "test secret logging | api_key=[REDACTED]",
+  "secret_test": {
+    "fake_secret_used": true,
+    "secret_value_exposed": false,
+    "redaction_present": true
+  },
+  "safe": true,
+  "recovery_logs_include_traceable_fields": [
+    "error_class",
+    "source",
+    "recovered_from"
+  ]
+}
